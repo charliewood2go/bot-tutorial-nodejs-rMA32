@@ -82,7 +82,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.imgur.com/CKWJ5wh.gif");
+    postMessage("https://media.giphy.com/media/26FPn4rR1damB0MQo/giphy.gif");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
