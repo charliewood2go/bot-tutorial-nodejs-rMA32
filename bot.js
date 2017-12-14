@@ -9,8 +9,8 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/schedule/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/playersearch/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
-      botRegexSlut = /^\/slut/; botRegexMason = /^\/mason/;
-      botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
+      botRegexSlut = /^\/standings/; botRegexMason = /^\/leaders/;
+      botRegexProp = /^\/rankings/;botRegexKys = /^\/home/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexMA32 = /^\/pending/; botRegexTrade = /^\/trade/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
@@ -25,17 +25,17 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    postMessage("https://daddyleagues.com/Deadline/standings/conference");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/409x327.jpeg.08b5d95c51bb4897835cfe6b514f2f52.large");
+    postMessage("https://daddyleagues.com/Deadline/standing/ranking");
     this.res.end();
   }
   else if(request.text && botRegexKys.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.wikihow.com/Tie-a-Noose");
+    postMessage("https://daddyleagues.com/Deadline");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
@@ -137,7 +137,7 @@ function respond() {
   } 
   else if(request.text && botRegexMason.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://i.groupme.com/845x1170.jpeg.002f5f8a4b6c4afbb858f474f99506ad");
+    postMessage("https://daddyleagues.com/Deadline/stats/player");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
