@@ -82,7 +82,7 @@ function respond() {
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://media.giphy.com/media/26FPn4rR1damB0MQo/giphy.gif");
+    postMessage("http://akns-images.eonline.com/eol_images/Entire_Site/20151017/rs_560x314-151117125934-jazzy-jeff.gif");
     this.res.end();
   } 
   else if(request.text && botRegexAd.test(request.text)) {
