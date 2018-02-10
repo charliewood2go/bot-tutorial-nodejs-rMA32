@@ -25,22 +25,22 @@ function respond() {
   }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/standings/conference");
+    postMessage("https://daddyleagues.com/DeltaLG/standings/conference");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/standing/ranking");
+    postMessage("https://daddyleagues.com/DeltaLG/standing/ranking");
     this.res.end();
   }
   else if(request.text && botRegexKys.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline");
+    postMessage("https://daddyleagues.com/DeltaLG");
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/schedules");
+    postMessage("https://daddyleagues.com/DeltaLG/schedules");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
@@ -71,7 +71,7 @@ function respond() {
   else if(request.text && botRegexDL.test(request.text)) {
     this.res.writeHead(200);
     //postMessage("http://www.daddyleagues.com/maddenrating?name=&position=all&team="+request.text.substring(5,8));
-    postMessage("http://daddyleagues.com/deadline/team/"+request.text.substring(5,8)+"/depthchart");
+    postMessage("http://daddyleagues.com/DeltaLG/team/"+request.text.substring(5,8)+"/depthchart");
     this.res.end();
   } 
   
@@ -92,7 +92,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/rules");
+    postMessage("https://daddyleagues.com/DeltaLG/rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
@@ -103,14 +103,14 @@ function respond() {
   else if(request.text && botRegexSC.test(request.text)) {
     this.res.writeHead(200);
     
-    postMessage("http://daddyleagues.com/deadline/team/"+request.text.substring(5,8)+"/schedule");
+    postMessage("http://daddyleagues.com/DeltaLG/team/"+request.text.substring(5,8)+"/schedule");
     this.res.end();
   }
   else if(request.text && botRegexP.test(request.text)) {
     this.res.writeHead(200);
     var req = request.text.substring(5,request.text.length);
     var rep = req.replace(/ /,"+");
-    postMessage("http://daddyleagues.com/deadline/players?name="+rep+"&position=all&team=all");
+    postMessage("http://daddyleagues.com/DeltaLG/players?name="+rep+"&position=all&team=all");
     
     this.res.end();
   }  
@@ -132,12 +132,12 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/coaches");
+    postMessage("https://daddyleagues.com/DeltaLG/coaches");
     this.res.end();
   } 
   else if(request.text && botRegexMason.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://daddyleagues.com/Deadline/stats/player");
+    postMessage("https://daddyleagues.com/DeltaLG/stats/player");
     this.res.end();
   } 
   else if(request.text && botDuck.test(request.text)) {
